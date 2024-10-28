@@ -45,7 +45,7 @@ namespace Lopez_Tomas_Examen_Progreso_1.Controllers
         // GET: Lopez/Create
         public IActionResult Create()
         {
-            ViewData["IDcelular"] = new SelectList(_context.Set<Celular>(), "IDcelular", "IDcelular");
+            ViewData["IDcelular"] = new SelectList(_context.Set<Celular>(), "IDcelular", "numero");
             return View();
         }
 
@@ -62,7 +62,7 @@ namespace Lopez_Tomas_Examen_Progreso_1.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IDcelular"] = new SelectList(_context.Set<Celular>(), "IDcelular", "IDcelular", lopez.celular);
+            ViewData["IDcelular"] = new SelectList(_context.Set<Celular>(), "IDcelular", "numero", lopez.celular);
             return View(lopez);
         }
 
