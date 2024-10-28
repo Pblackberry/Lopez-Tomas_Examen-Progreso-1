@@ -9,11 +9,11 @@ namespace Lopez_Tomas_Examen_Progreso_1.Models
         [Required]
         public string modelo { get; set; }
         [Required]
-        [MaxLength(10)]
-        [MinLength(10)]
+       // [MaxLength(10)]
+       // [MinLength(10)]
         public int numero { get; set; }
-        [MaxLength(4)]
-        [MinLength(4)]
+       // [MaxLength(4)]
+       // [MinLength(4)]
         public int año {  get; set; }   
         public float precio { get; set; }   
     }
