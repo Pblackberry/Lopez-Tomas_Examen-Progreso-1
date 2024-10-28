@@ -13,4 +13,6 @@ using Lopez_Tomas_Examen_Progreso_1.Models;
         }
 
         public DbSet<Lopez_Tomas_Examen_Progreso_1.Models.Lopez> Lopez { get; set; } = default!;
+
+public DbSet<Lopez_Tomas_Examen_Progreso_1.Models.Celular> Celular { get; set; } = default!;
     }
